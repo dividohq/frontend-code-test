@@ -7,13 +7,11 @@ import { nabooBankData } from './naboo-bank';
 export interface LenderResponse {
   name: string;
   fields: Array<
-    | 'fullName'
-    | 'firstName'
-    | 'lastName'
+    | 'first_name'
+    | 'last_name'
     | 'email'
-    | 'birthday'
-    | 'yearlyIncome'
-    | 'monthlyIncome'
+    | 'date_of_birth'
+    | 'monthly_income'
     | 'gender'
     | 'address'
   >;
@@ -22,3 +20,5 @@ export interface LenderResponse {
 const handler = (_: NextApiRequest, res: NextApiResponse<LenderResponse[]>) => {
   res.status(200).json([nabooBankData, middleEarthBankData, bankOfAzerothData]);
 };
+
+export default handler;

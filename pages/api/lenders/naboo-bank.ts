@@ -4,7 +4,7 @@ import { LenderResponse } from '.';
 
 export const nabooBankData: LenderResponse = {
   name: 'Naboo Bank',
-  fields: ['firstName', 'lastName', 'gender', 'monthlyIncome', 'address'],
+  fields: ['first_name', 'last_name', 'gender', 'monthly_income', 'address'],
 };
 
 const handler = (_: NextApiRequest, res: NextApiResponse<LenderResponse>) => {

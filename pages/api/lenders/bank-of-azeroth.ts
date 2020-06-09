@@ -4,7 +4,7 @@ import { LenderResponse } from '.';
 
 export const bankOfAzerothData: LenderResponse = {
   name: 'Bank of Azeroth',
-  fields: ['firstName', 'lastName', 'email', 'gender', 'monthlyIncome'],
+  fields: ['first_name', 'last_name', 'email', 'gender', 'monthly_income'],
 };
 
 const handler = (_: NextApiRequest, res: NextApiResponse<LenderResponse>) => {

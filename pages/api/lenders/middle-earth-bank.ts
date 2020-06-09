@@ -4,7 +4,7 @@ import { LenderResponse } from '.';
 
 export const middleEarthBankData: LenderResponse = {
   name: 'Middle Earth Bank',
-  fields: ['fullName', 'email', 'birthday', 'yearlyIncome'],
+  fields: ['first_name', 'email', 'date_of_birth', 'monthly_income'],
 };
 
 const handler = (_: NextApiRequest, res: NextApiResponse<LenderResponse>) => {
